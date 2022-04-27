@@ -1,0 +1,248 @@
+/*
+Theme Name: MEOSIS DEV
+Theme URI: http://www.meosis.fr/
+Description: MEOSIS
+Author: MEOSIS
+Author URI: http://www.meosis.fr/
+Version: 1.0
+*/
+:root {
+	--primary-color: #9c2525;
+  }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+body{
+    background-image: url(./img/bg-contenu.png);
+}
+
+.header--section{
+    height: 100vh;
+    background-image: url(./img/bg-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.container-header{
+    position: relative;
+    top:50%;
+    left: 0%;
+    transform:translate(0%, -50%);
+    -webkit-transform:translate(0%, -50%);
+}
+.text-hero{
+    font-weight: bold;
+    font-size: 4em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.text-hero-2{
+    letter-spacing: 0.6em;
+    font-weight: 400;
+    color: #fff;
+    font-size: 3em;
+}
+/* img hover effect*/
+.img--effect{
+    width: 200px;
+    transition: transform .1s;
+}
+.img--effect:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    }
+
+/* text */
+h2{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+h3, h4{
+    text-transform: uppercase; 
+}
+.row-hover a{
+    text-decoration: none;
+    color: #fff;
+}
+.first--para{
+    color: #484848;
+    font-weight: 600;
+}
+.sub--title{
+    border-bottom: var(--primary-color) solid 5px;
+}
+/*Button*/
+.btn--primary{
+    color: #606c6c;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* section presta */
+.title-presta{
+    color: #fff;
+}
+/* .row-hover:hover{
+    padding: 130px;
+    transition: 0.5s linear;
+} */
+.row-bg{
+    background-image: url(./img/prestation1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+}
+.row-bg-2{
+    background-image: url(./img/prestation2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+}
+.row-bg-3{
+    background-image: url(./img/prestation3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+}
+.row-bg-4{
+    background-image: url(./img/prestation4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+}
+
+/* Card */
+.card{
+    width: 23rem;
+    transition: 0.5s ease;
+    margin-bottom: 40px;
+}
+.card-img-top{
+    height: 20rem;
+}
+.card-body{
+    padding: 18px;
+}
+.card .btn-card{
+    position: relative;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    left: 65%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.card:hover{
+    -webkit-box-shadow: 0px 5px 10px -2px #676767; 
+    box-shadow: 0px 5px 10px -2px #676767;
+}
+.card-title{
+    text-transform: uppercase;
+    border-bottom: var(--primary-color) solid 3px;
+    text-align: center;
+    padding: 15px;
+}
+.card-text{
+    text-align: center;
+}
+.count{
+    background-color: rgba(255, 255, 255, 0.949);
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    padding: 20px;
+}
+.count-number{
+    font-size: 4rem;
+    color: rgb(103, 103, 103);
+}
+.fleche-card{
+    width: 20px;
+}
+/* Section newsletter*/
+.col--right{
+    background-color: var(--primary-color);
+    padding: 100px;
+    color: #fff;
+}
+.devider{
+    height: 5px !important;
+}
+.col--left{
+    background-color: #000000;
+    padding: 100px;
+    color: #fff;
+}
+/*Form*/
+::placeholder{
+    color: #fff !important;
+    font-style: italic;
+}
+.form-control{
+    background-color: #000;
+    border: none;
+    border-radius: 0;
+    border-bottom: #fff solid 2px;
+    width: 300px;
+}
+.btn-cont{
+    margin-top: 40px;
+}
+.btn-form{
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    left: 60%;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*Footer*/
+.bi-geo-alt-fill, .bi-telephone-fill, .bi-envelope-fill{
+    color: var(--primary-color);
+}
+.bi-facebook{
+    color: rgb(94, 28, 28) !important;
+}
+.devider-footer{
+    color: var(--primary-color);
+    height: 5px !important;
+}
+/* Display mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    .card{
+        width: 22rem;
+    }
+    .form-control{
+        background-color: #000;
+        border: none;
+        border-radius: 0;
+        border-bottom: #fff solid 2px;
+        width: 250px;
+    }
+    .btn-form{
+        position: relative;
+        color: #fff;
+        text-transform: uppercase;
+        left: 0;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+  }
