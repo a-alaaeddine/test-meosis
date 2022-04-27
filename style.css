@@ -89,10 +89,6 @@ h3, h4{
 .title-presta{
     color: #fff;
 }
-/* .row-hover:hover{
-    padding: 130px;
-    transition: 0.5s linear;
-} */
 .row-bg{
     background-image: url(./img/prestation1.jpg);
     background-repeat: no-repeat;
@@ -186,6 +182,13 @@ h3, h4{
     padding: 100px;
     color: #fff;
 }
+.box{
+    position: relative;
+    top:50%;
+    left: 40%;
+    transform:translate(0%, -50%);
+    -webkit-transform:translate(0%, -50%);
+}
 /*Form*/
 ::placeholder{
     color: #fff !important;
@@ -224,6 +227,16 @@ h3, h4{
 }
 /* Display mobile */
 @media (min-width: 320px) and (max-width: 480px) {
+    .text-hero{
+        font-size: 3em;
+    }
+    .text-hero-2{
+        letter-spacing: 0.6em;
+        font-size: 1.1em;
+    }
+    .row-bg, .row-bg-2, .row-bg-3, .row-bg-4{
+        padding: 40px;
+    }
     .card{
         width: 22rem;
     }
@@ -241,8 +254,13 @@ h3, h4{
         left: 0;
         margin-top: 10px;
         text-decoration: none;
-        font-size: 2em;
+        font-size: 1.2em;
         font-weight: bold;
+    }
+    .box{
+        padding: 20px;
+        top: 90%;
+        left: 20%;
     }
     
   }
