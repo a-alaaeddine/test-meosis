@@ -17,7 +17,34 @@ Version: 1.0
 body{
     background-image: url(./img/bg-contenu.png);
 }
-
+/*Navbar*/
+.navbar{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform:translate(-50%, -100%);
+}
+.navbar-brand{
+    margin-left: 20px;
+}
+.nav-item{
+    margin-left: 20px;
+}
+.navbar .nav-link:active{
+    color: var(--primary-color) !important;
+}
+.navbar .nav-link:hover{
+    color: var(--primary-color) !important;
+}
+.nav-link:hover{
+    color: #606c6c;
+}
+.nav-link-icone{
+    transform:translateY(-12px);
+}
+.nav-link-icone2{
+    transform:translateY(10px);
+}
 .header--section{
     height: 100vh;
     background-image: url(./img/bg-header.jpg);
@@ -45,6 +72,14 @@ body{
     color: #fff;
     font-size: 3em;
 }
+.chevron-down{
+    rotate: 90deg;
+    animation: 1s linear 1s infinite alternate iconeAnim;
+}
+@-webkit-keyframes iconeAnim { 
+    from { transform: translateX(0); }
+    to { transform: translateX(-10px); }  };
+
 /* img hover effect*/
 .img--effect{
     width: 200px;
@@ -54,16 +89,13 @@ body{
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5);
-    }
-
+}
 /* text */
 h2{
     color: #000;
-    text-transform: uppercase;
-    font-size: 2rem;
     font-weight: bold;
 }
-h3, h4{
+h2, h3, h4{
     text-transform: uppercase; 
 }
 .row-hover a{
@@ -134,7 +166,7 @@ h3, h4{
     position: relative;
     color: var(--primary-color);
     text-transform: uppercase;
-    left: 65%;
+    left: 60%;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -218,8 +250,12 @@ h3, h4{
 .bi-geo-alt-fill, .bi-telephone-fill, .bi-envelope-fill{
     color: var(--primary-color);
 }
-.bi-facebook{
-    color: rgb(94, 28, 28) !important;
+.i-facebook{
+    color: rgb(87, 87, 87) !important;
+    width: 20px;
+}
+.bi-shop-window{
+    color: rgb(87, 87, 87);
 }
 .devider-footer{
     color: var(--primary-color);
@@ -227,6 +263,16 @@ h3, h4{
 }
 /* Display mobile */
 @media (min-width: 320px) and (max-width: 480px) {
+    /*Navbar*/
+    .navbar{
+        transform: translateY(0px);
+        left: 0;
+        width: 100%;
+    }
+    .chevron-down{
+        position: relative;
+        left: 50%;
+    }
     .text-hero{
         font-size: 3em;
     }
@@ -262,5 +308,4 @@ h3, h4{
         top: 90%;
         left: 20%;
     }
-    
   }
