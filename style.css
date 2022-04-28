@@ -17,6 +17,17 @@ Version: 1.0
 body{
     background-image: url(./img/bg-contenu.png);
 }
+/*Flag*/
+.flag--fr{
+    width: 30px;
+    position: relative;
+    transform:translate(1000px, -300px);
+}
+.flag--en{
+    width: 30px;
+    position: relative;
+    transform:translate(1010px, -300px);
+}
 /*Navbar*/
 .navbar{
     width: 50%;
@@ -268,6 +279,10 @@ h2, h3, h4{
         transform: translateY(0px);
         left: 0;
         width: 100%;
+    }
+    /*Flag*/
+    .flag--fr, .flag--en{
+        display: none;
     }
     .chevron-down{
         position: relative;
