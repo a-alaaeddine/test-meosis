@@ -87,7 +87,7 @@ body{
     rotate: 90deg;
     animation: 1s linear 1s infinite alternate iconeAnim;
 }
-@-webkit-keyframes iconeAnim { 
+@keyframes iconeAnim { 
     from { transform: translateX(0); }
     to { transform: translateX(-10px); }  };
 
